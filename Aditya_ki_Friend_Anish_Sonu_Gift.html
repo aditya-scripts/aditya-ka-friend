@@ -89,7 +89,6 @@ Sorry भाई, please मुझे माफ़ कर दे। ❤️</div>
       <button class="secondary" id="fullForgive">पूरी तरह से कर दिया 😌</button>
     </div>
     <p class="small" style="margin-top:20px">तुझे क्या लगा, नीचे वाला option नहीं होगा? 😏</p>
-    <button class="secondary" id="trick">माफ़ नहीं करूँगा 😤</button>
     <div id="answer" class="hidden" style="margin-top:20px">
       <p class="final" id="answerText"></p>
       <p>गुस्सा अपनी जगह, पर दोस्ती भी अपनी जगह। जब मन करे, बात कर लेना भाई। 🫂</p>
@@ -122,7 +121,6 @@ document.getElementById("toQuestion").addEventListener("click",()=>show("questio
 function answer(text){document.getElementById("answerText").textContent=text;document.getElementById("answer").classList.remove("hidden");confetti();}
 document.getElementById("forgive").addEventListener("click",()=>answer("Yesss! अपना भाई मान गया! 🥹❤️"));
 document.getElementById("fullForgive").addEventListener("click",()=>answer("अरे वाह! आज तो Sonu ने दिल जीत लिया! 😂💖"));
-document.getElementById("trick").addEventListener("click",()=>answer("तुझे क्या लगा, option दबाकर बच जाएगा? 😂 बात तो करनी पड़ेगी भाई! 😎"));
 document.getElementById("again").addEventListener("click",()=>{document.getElementById("answer").classList.add("hidden");show("start");});
 </script>
 </body>
